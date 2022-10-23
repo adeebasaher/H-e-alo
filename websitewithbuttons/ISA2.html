@@ -1,0 +1,63 @@
+<!-- <html>
+    <head></head>
+    <style>
+        div,p {
+            border: 1px black solid;
+            padding: 50px;
+        }
+    </style>
+    <body>
+        <div id="a">
+            <div id="b">
+                <div id ="c"></div>
+                <div id ="d"></div>
+            </div>
+            <div id="e">
+                <div id ="f"></div>
+            </div>
+
+        </div>
+    </body>
+    <script>
+        a=document.querySelector("#a");
+        b=document.querySelector("#b");
+        a.addEventListener("click",function(){console.log(event.target.id + "Hi I am Parent")},true)
+        b.addEventListener("click",function(){console.log(event.target.id + "Hi I am child")},true)
+    </script>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Audio Video and Progress</title>
+
+</head>
+
+<body>
+    <video src="heythere.mp4" id="v1" controls autoplay="true"></video>
+    <button onclick="init1()">Play</button>
+</body>
+<script> function init1() {
+        v1 = document.querySelector("#v1");
+        v1.play();
+        v1.currentTime = 0;
+        setInterval(init, 5000);
+    }
+    function fun() {
+        tmp = Math.floor(Math.random() * (vl.duration));
+        console.log(tmp); vl.currentTime = tmp;
+    }
+    function init() {
+        p1 = document.querySelector("#pl");
+        p1.value += 5;
+        if (pl.value != 100)
+            setInterval(init, 1000); '='
+    }</script>
+
+</html>
